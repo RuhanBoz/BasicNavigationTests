@@ -3,14 +3,14 @@ package com.cbt.utilities;
 public class StringUtility {
 
 
-        public static boolean verifyEquals(String expected, String actual){
+        public static void verifyEquals(String expected, String actual) {
 
-            if(expected.equals(actual)){
-                return true;
+            if(expected.equalsIgnoreCase(actual)){
+                System.out.println("PASS");
             }
-            else
-                return false;
+            else{
+                System.out.println("FAIL");
+            }
         }
-
     }
 
